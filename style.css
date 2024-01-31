@@ -1,8 +1,9 @@
 body {
     background-color: green;
     font-family: 'Arial', sans-serif;
-    color: #333;
+    color: white; /* Set text color to white */
     line-height: 1.6;
+    font-size: 16px; /* Increase font size */
 }
 
 header {
@@ -14,11 +15,39 @@ header {
 }
 
 section {
-    background-color: green; /* Add this line */
+    background-color: green;
     border: 1px solid #ddd;
     border-radius: 10px;
     padding: 20px;
     margin: 20px 0;
+}
+
+/* Adjust font size and color within the sections */
+section h2 {
+    font-size: 24px; /* Increase heading font size */
+    color: #fff; /* Set heading color to white */
+}
+
+section p {
+    font-size: 18px; /* Increase paragraph font size */
+}
+
+/* Style the unordered list */
+section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section li {
+    font-size: 16px; /* Increase list item font size */
+}
+
+/* Style images within the sections */
+section img {
+    max-width: 100%; /* Make sure images are responsive */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra spacing below images */
+    margin: 20px 0; /* Add margin for better spacing */
 }
 
 .cta-button {
