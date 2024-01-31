@@ -1,9 +1,22 @@
 /* ... Existing styles ... */
 
 /* Update heading color to match the background */
-h1, h2, h3, h4, h5, h6,
-.display-4 {
+h1, .display-4 {
     color: var(--dark);
+}
+
+/* Update subheading colors */
+h2 {
+    color: #3498db; /* Blue color for subheadings */
+}
+
+h3 {
+    color: #e74c3c; /* Red color for subheadings */
+}
+
+/* Increase font size for subheadings and content */
+h2, h3, p {
+    font-size: 20px;
 }
 
 /* Adjust menu styles */
