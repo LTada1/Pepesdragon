@@ -1,4 +1,8 @@
-/* ... Existing styles ... */
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
 
 body {
     background-color: green;
@@ -6,7 +10,6 @@ body {
     color: white;
     line-height: 1.6;
     font-size: 16px;
-    margin-top: 0;
 }
 
 header {
@@ -14,9 +17,7 @@ header {
     background-position: center;
     color: white;
     text-align: center;
-    padding: 80px 20px;
-    margin-top: 60px;
-    position: relative;
+    padding: 50px;
 }
 
 .menu-toggle {
@@ -26,7 +27,7 @@ header {
     left: 20px;
     font-size: 24px;
     cursor: pointer;
-    z-index: 1001;
+    z-index: 1001; /* Ensure it's above the content */
 }
 
 .menu-toggle:hover {
@@ -62,27 +63,27 @@ header {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    font-size: 14px; /* Adjust the font size as needed */
 }
 
 .menu-bar img {
-    width: 30px;
+    width: 30px; /* Adjust the size as needed */
     height: auto;
     margin-right: 10px;
 }
 
-/* ... Other styles ... */
-
+/* Adjust content margin to avoid overlap with the menu toggle */
 section {
-    margin-top: 60px;
+    margin-top: 60px; /* Adjust as needed */
 }
 
+/* Ensure social logos are visible */
 .cta-button img {
-    width: 30px;
+    width: 30px; /* Adjust the size as needed */
     height: auto;
     margin-right: 10px;
 }
 
+/* Responsive design for mobile phones */
 @media only screen and (max-width: 600px) {
     .menu-toggle {
         left: 10px;
@@ -91,4 +92,46 @@ section {
     .menu-bar {
         padding: 10px 20px;
     }
+}
+
+/* Additional styling for the green-background sections */
+.green-background {
+    background-color: green;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.green-background h2 {
+    font-size: 24px;
+    color: #fff;
+}
+
+.green-background p {
+    font-size: 18px;
+}
+
+.green-background ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.green-background li {
+    font-size: 16px;
+}
+
+.green-background img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+}
+
+/* Footer styling */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
