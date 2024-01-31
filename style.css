@@ -1,5 +1,24 @@
 /* ... Existing styles ... */
 
+body {
+    background-color: green;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    line-height: 1.6;
+    font-size: 16px;
+    margin-top: 0;
+}
+
+header {
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    margin-top: 60px;
+    position: relative;
+}
+
 .menu-toggle {
     display: block;
     position: fixed;
@@ -7,7 +26,7 @@
     left: 20px;
     font-size: 24px;
     cursor: pointer;
-    z-index: 1001; /* Ensure it's above the content */
+    z-index: 1001;
 }
 
 .menu-toggle:hover {
@@ -43,29 +62,27 @@
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: 14px; /* Adjust the font size as needed */
 }
 
 .menu-bar img {
-    width: 30px; /* Adjust the size as needed */
+    width: 30px;
     height: auto;
     margin-right: 10px;
 }
 
 /* ... Other styles ... */
 
-/* Adjust content margin to avoid overlap with the menu toggle */
 section {
-    margin-top: 60px; /* Adjust as needed */
+    margin-top: 60px;
 }
 
-/* Ensure social logos are visible */
 .cta-button img {
-    width: 30px; /* Adjust the size as needed */
+    width: 30px;
     height: auto;
     margin-right: 10px;
 }
 
-/* Responsive design for mobile phones */
 @media only screen and (max-width: 600px) {
     .menu-toggle {
         left: 10px;
