@@ -1,137 +1,202 @@
-/* Reset some default styles */
-body, h1, h2, h3, p, ul, li {
-    margin: 0;
-    padding: 0;
+/* ... Existing styles ... */
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap');
+
+:root {
+    --danger: red;
+    --dark: #21252f;
+    --body: #888;
+    --white: #ffffff;
+    --box-shadow: 0 8px 22px rgba(0,0,0,0.1);
 }
 
 body {
-    background-color: green;
-    font-family: 'Arial', sans-serif;
-    color: white;
-    line-height: 1.6;
-    font-size: 16px;
+    font-family: "Sora", sans-serif;
+    line-height: 1.7;
+    color: var(--body);
 }
 
-header {
-    background-size: cover;
+h1,h2,h3,h4,h5,h6,
+.display-4 {
+    color: var(--dark);
+    font-weight: 700;
+}
+
+a {
+    color: var(--dark);
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+.navbar {
+    box-shadow: var(--box-shadow);
+}
+
+.logo {
+    width: 160px;
+}
+
+.navbar .nav-link {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.navbar .nav-link.active {
+    color: var(--danger) !important;
+}
+
+.btn {
+    padding: 14px 18px;
+    border-width: 2px;
+    border-radius: 0;
+}
+
+.hero {
+    background-image: url(../img/hero\ \(2\).png);
     background-position: center;
-    color: white;
-    text-align: center;
-    padding: 50px;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
 }
 
-.menu-toggle {
-    display: block;
-    position: fixed;
-    top: 15px;
-    left: 20px;
-    font-size: 24px;
-    cursor: pointer;
-    z-index: 1001; /* Ensure it's above the content */
-}
-
-.menu-toggle:hover {
-    color: #4CAF50;
-}
-
-.menu-bar {
-    display: none;
-    position: fixed;
+.hero::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
     top: 0;
     left: 0;
-    background-color: #333;
-    padding: 10px;
-    z-index: 1000;
+    background-color: rgba(21, 20, 51, 0.8);
+    z-index: -1;
 }
 
-.menu-bar.show-menu {
-    display: block;
-}
-
-.menu-bar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.menu-bar li {
-    display: block;
-    margin-bottom: 10px;
-}
-
-.menu-bar a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.menu-bar img {
-    width: 30px; /* Adjust the size as needed */
-    height: auto;
-    margin-right: 10px;
-}
-
-/* Adjust content margin to avoid overlap with the menu toggle */
 section {
-    margin-top: 60px; /* Adjust as needed */
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
-/* Ensure social logos are visible */
-.cta-button img {
-    width: 30px; /* Adjust the size as needed */
-    height: auto;
-    margin-right: 10px;
+.card-effect {
+    box-shadow: var(--box-shadow);
+    background-color: var(--white);
+    padding: 25px;
+    transition: all 0.35s ease;
 }
 
-/* Responsive design for mobile phones */
-@media only screen and (max-width: 600px) {
-    .menu-toggle {
-        left: 10px;
-    }
-
-    .menu-bar {
-        padding: 10px 20px;
-    }
+.card-effect:hover {
+    box-shadow: none;
+    transform: translateY(5px);
 }
 
-/* Additional styling for the green-background sections */
-.green-background {
-    background-color: green;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px 0;
+.iconbox {
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--danger);
+    color: var(--white);
+    font-size: 32px;
+    border-radius: 100px;
+    flex: none;
 }
 
-.green-background h2 {
-    font-size: 24px;
-    color: #fff;
+.service {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
 }
 
-.green-background p {
-    font-size: 18px;
+.service::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    background-color: var(--danger);
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.4s ease;
 }
 
-.green-background ul {
-    list-style-type: none;
-    padding: 0;
+.service:hover .iconbox {
+    background-color: var(--white);
+    color: var(--danger);
 }
 
-.green-background li {
-    font-size: 16px;
+.service:hover h5,
+.service:hover p {
+    color: var(--white);
 }
 
-.green-background img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 20px 0;
+.service:hover::after {
+    opacity: 1;
+    top: 0;
 }
 
-/* Footer styling */
-.footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
+.col-img {
+    background-image: url(../img/community.jpeg);
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
 }
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a {
+    width: 34px;
+    height: 34px;
+    background-color: var(--danger);
+    border-radius: 2px solid var(--danger);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    margin-left: 5px;
+    transition: all 0.4s ease;
+    border: 2px solid var(--danger);
+}
+
+.social-icons a:hover {
+    color: var(--danger);
+    background-color: transparent;
+    border-color: var(--dangers);
+}
+
+form input.form-control {
+    height: 56px;
+}
+
+form .form-control {
+    border: transparent;
+    border-radius: 0;
+    background-color: rgba(0,0,0,0.02);
+}
+
+.footer-top {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background-color: var(--dark);
+}
+
+.footer-top a {
+    color: var(--body);
+}
+
+.footer-top a:hover {
+    color: var(--white);
+}
+
+.footer-bottom {
+    background-color: #242933;
+}
+
+/* ... Other styles ... */
