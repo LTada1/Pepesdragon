@@ -1,51 +1,9 @@
-/* ... Existing styles ... */
-
-/* Update heading color to match the background */
-h1, .display-4 {
-    color: var(--dark);
-}
-
-/* Update subheading colors */
-h2 {
-    color: #3498db; /* Blue color for subheadings */
-}
-
-h3 {
-    color: #e74c3c; /* Red color for subheadings */
-}
-
-/* Increase font size for subheadings and content */
-h2, h3, p {
-    font-size: 20px;
-}
-
-/* Adjust menu styles */
-.menu-toggle {
-    display: block;
-    position: fixed;
-    top: 15px;
-    left: 20px;
-    font-size: 24px;
-    cursor: pointer;
-    z-index: 1001; /* Ensure it's above the content */
-}
-
-.menu-toggle:hover {
-    color: #4CAF50;
-}
+/* Your existing styles here */
+/* ... */
 
 .menu-bar {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
     background-color: #333;
-    padding: 10px;
-    z-index: 1000;
-}
-
-.menu-bar.show-menu {
-    display: block;
+    padding: 10px 0;
 }
 
 .menu-bar ul {
@@ -55,8 +13,8 @@ h2, h3, p {
 }
 
 .menu-bar li {
-    display: block;
-    margin-bottom: 10px;
+    display: inline-block;
+    margin-right: 10px;
 }
 
 .menu-bar a {
@@ -65,33 +23,7 @@ h2, h3, p {
     font-weight: bold;
 }
 
-.menu-bar img {
-    width: 30px; /* Adjust the size as needed */
-    height: auto;
-    margin-right: 10px;
-}
-
-/* ... Other styles ... */
-
-/* Adjust content margin to avoid overlap with the menu toggle */
-section {
-    margin-top: 60px; /* Adjust as needed */
-}
-
-/* Ensure social logos are visible */
-.cta-button img {
-    width: 30px; /* Adjust the size as needed */
-    height: auto;
-    margin-right: 10px;
-}
-
-/* Responsive design for mobile phones */
-@media only screen and (max-width: 600px) {
-    .menu-toggle {
-        left: 10px;
-    }
-
-    .menu-bar {
-        padding: 10px 20px;
-    }
+.cta-button {
+    background-color: #333;
+    padding: 10px 0;
 }

@@ -22,16 +22,57 @@
     <meta property="og:description" content="Join the Pepe’s Dragon community, where fantasy meets finance on the Binance Smart Chain. Discover the unique utility, governance, and marketing strategies.">
     <meta property="og:site_name" content="Pepe’s Dragon">
 
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap">
+
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
-
-    <!-- Favicon -->
-    <link href="img/x.png" rel="icon">
 
     <!-- Additional CSS for background color -->
     <style>
         body {
             background-color: green;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Sora", sans-serif;
+            line-height: 1.7;
+            color: var(--body);
+        }
+
+        :root {
+            --danger: red;
+            --dark: #21252f;
+            --body: #888;
+            --white: #ffffff;
+            --box-shadow: 0 8px 22px rgba(0,0,0,0.1);
+        }
+
+        /* Your existing styles here */
+        /* ... */
+
+        .container {
+            width: 100%;
+            max-width: 1200px; /* Adjust the maximum width as needed */
+            margin: 0 auto;
+        }
+
+        section {
+            background-color: white;
+            margin: 20px 0;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+        }
+
+        /* Responsive design for mobile phones */
+        @media only screen and (max-width: 600px) {
+            /* Adjust styles for smaller screens */
         }
     </style>
 </head>
@@ -40,95 +81,107 @@
     <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
 
     <header style="background-image: url('images/header_background.jpg');">
-        <h1>Pepe’s Dragon: Unleashing Fantasy on BSC</h1>
+        <div class="container">
+            <h1 style="color: var(--white);">Pepe’s Dragon: Unleashing Fantasy on BSC</h1>
+        </div>
     </header>
 
     <nav class="menu-bar">
-        <ul>
-            <li><a href="#abstract">Abstract</a></li>
-            <li><a href="#introduction">Introduction</a></li>
-            <li><a href="#vision-mission">Vision and Mission</a></li>
-            <li><a href="#tokenomics">Tokenomics</a></li>
-            <li><a href="#utility-community">Utility and Community Engagement</a></li>
-            <li><a href="#community-governance">Community Governance</a></li>
-            <li><a href="#strategic-marketing">Strategic Marketing</a></li>
-            <li><a href="#fantasy-finance">Fantasy Meets Finance</a></li>
-            <li><a href="#conclusion">Conclusion</a></li>
-        </ul>
+        <div class="container">
+            <ul>
+                <li><a href="#abstract" style="color: var(--white);">Abstract</a></li>
+                <li><a href="#introduction" style="color: var(--white);">Introduction</a></li>
+                <li><a href="#vision-mission" style="color: var(--white);">Vision and Mission</a></li>
+                <li><a href="#tokenomics" style="color: var(--white);">Tokenomics</a></li>
+                <li><a href="#utility-community" style="color: var(--white);">Utility and Community Engagement</a></li>
+                <li><a href="#community-governance" style="color: var(--white);">Community Governance</a></li>
+                <li><a href="#strategic-marketing" style="color: var(--white);">Strategic Marketing</a></li>
+                <li><a href="#fantasy-finance" style="color: var(--white);">Fantasy Meets Finance</a></li>
+                <li><a href="#conclusion" style="color: var(--white);">Conclusion</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <section id="abstract" class="green-background">
-        <h2>Abstract</h2>
-        <img src="images/1.jpg" alt="Image 1">
-        <p>Pepe’s Dragon is not merely a cryptocurrency; it embodies the fusion of the legendary Pepe culture and the enchanting charm of Pepe's Dragon on the Binance Smart Chain (BSC) network. Beyond financial innovation, this project symbolizes a dynamic community, robust utility, and strategic marketing poised to elevate Pepe’s Dragon to unprecedented heights in the crypto space.</p>
-    </section>
+    <div class="container">
 
-    <section id="introduction" class="green-background">
-        <h2>Introduction</h2>
-        <img src="images/2.jpg" alt="Image 2">
-        <p>In the vibrant world of cryptocurrency, Pepe’s Dragon emerges as an extraordinary project on the BSC network. Merging the cultural phenomenon surrounding Pepe with the mythical charisma of Pepe's Dragon, the project aims to captivate the crypto community through a unique blend of humor, creativity, and groundbreaking tokenomics.</p>
-    </section>
+        <section id="abstract" class="green-background">
+            <h2 style="color: var(--dark);">Abstract</h2>
+            <img src="images/1.jpg" alt="Image 1">
+            <p>Pepe’s Dragon is not merely a cryptocurrency; it embodies the fusion of the legendary Pepe culture and the enchanting charm of Pepe's Dragon on the Binance Smart Chain (BSC) network. Beyond financial innovation, this project symbolizes a dynamic community, robust utility, and strategic marketing poised to elevate Pepe’s Dragon to unprecedented heights in the crypto space.</p>
+        </section>
 
-    <section id="vision-mission" class="green-background">
-        <h2>Vision and Mission</h2>
-        <img src="images/3.jpg" alt="Image 3">
-        <h3>Vision:</h3>
-        <p>Our vision is to propel Pepe’s Dragon into the forefront of the crypto landscape, exceeding the aspirations of other projects. We foresee a thriving community embracing the essence of Pepe and Pepe's Dragon, reaping the benefits of our token's utility and sustainability.</p>
-        <h3>Mission:</h3>
-        <p>Our mission is to forge a robust ecosystem that not only rewards holders but also contributes meaningfully to the broader crypto community through innovative marketing initiatives.</p>
-    </section>
+        <section id="introduction" class="green-background">
+            <h2 style="color: var(--dark);">Introduction</h2>
+            <img src="images/2.jpg" alt="Image 2">
+            <p>In the vibrant world of cryptocurrency, Pepe’s Dragon emerges as an extraordinary project on the BSC network. Merging the cultural phenomenon surrounding Pepe with the mythical charisma of Pepe's Dragon, the project aims to captivate the crypto community through a unique blend of humor, creativity, and groundbreaking tokenomics.</p>
+        </section>
 
-    <section id="tokenomics" class="green-background">
-        <h2>Tokenomics</h2>
-        <img src="images/4.jpg" alt="Image 4">
-        <h3>Buy Tax:</h3>
-        <ul>
-            <li>2% Liquidity</li>
-            <li>2% Reflections</li>
-            <li>4% Marketing</li>
-        </ul>
-        <h3>Sell Tax:</h3>
-        <ul>
-            <li>2% Liquidity</li>
-            <li>2% Reflections</li>
-            <li>4% Marketing (Gradually reducing from 10% at launch to 4%)</li>
-        </ul>
-        <img src="images/graph.png" alt="Graph Image">
-    </section>
+        <section id="vision-mission" class="green-background">
+            <h2 style="color: var(--dark);">Vision and Mission</h2>
+            <img src="images/3.jpg" alt="Image 3">
+            <h3 style="color: var(--dark);">Vision:</h3>
+            <p>Our vision is to propel Pepe’s Dragon into the forefront of the crypto landscape, exceeding the aspirations of other projects. We foresee a thriving community embracing the essence of Pepe and Pepe's Dragon, reaping the benefits of our token's utility and sustainability.</p>
+            <h3 style="color: var(--dark);">Mission:</h3>
+            <p>Our mission is to forge a robust ecosystem that not only rewards holders but also contributes meaningfully to the broader crypto community through innovative marketing initiatives.</p>
+        </section>
 
-    <section id="utility-community" class="green-background">
-        <h2>Utility and Community Engagement</h2>
-        <p>Pepe’s Dragon distinguishes itself with a well-balanced buy and sell tax structure, ensuring liquidity, rewarding long-term holders with reflections, and fueling marketing efforts for sustained growth. The marketing tax, gradually reducing from 10% at launch to 4%, signifies our commitment to both initial promotion and long-term stability.</p>
-    </section>
+        <section id="tokenomics" class="green-background">
+            <h2 style="color: var(--dark);">Tokenomics</h2>
+            <img src="images/4.jpg" alt="Image 4">
+            <h3 style="color: var(--dark);">Buy Tax:</h3>
+            <ul>
+                <li>2% Liquidity</li>
+                <li>2% Reflections</li>
+                <li>4% Marketing</li>
+            </ul>
+            <h3 style="color: var(--dark);">Sell Tax:</h3>
+            <ul>
+                <li>2% Liquidity</li>
+                <li>2% Reflections</li>
+                <li>4% Marketing (Gradually reducing from 10% at launch to 4%)</li>
+            </ul>
+            <img src="images/graph.png" alt="Graph Image">
+        </section>
 
-    <section id="community-governance" class="green-background">
-        <h2>Community Governance</h2>
-        <p>Pepe’s Dragon champions decentralization and community empowerment. Future decisions, developments, and initiatives will be subject to community voting, fostering a sense of ownership. We ensure that Pepe’s Dragon remains a project shaped by its passionate supporters.</p>
-    </section>
+        <section id="utility-community" class="green-background">
+            <h2 style="color: var(--dark);">Utility and Community Engagement</h2>
+            <p>Pepe’s Dragon distinguishes itself with a well-balanced buy and sell tax structure, ensuring liquidity, rewarding long-term holders with reflections, and fueling marketing efforts for sustained growth. The marketing tax, gradually reducing from 10% at launch to 4%, signifies our commitment to both initial promotion and long-term stability.</p>
+        </section>
 
-    <section id="strategic-marketing" class="green-background">
-        <h2>Strategic Marketing</h2>
-        <p>Marketing is the cornerstone of Pepe’s Dragon's success. We allocate 4% of every buy and sell transaction towards sustained marketing initiatives. This transparent approach not only creates awareness at launch but ensures Pepe’s Dragon remains in the spotlight, demonstrating our dedication to long-term success.</p>
-    </section>
+        <section id="community-governance" class="green-background">
+            <h2 style="color: var(--dark);">Community Governance</h2>
+            <p>Pepe’s Dragon champions decentralization and community empowerment. Future decisions, developments, and initiatives will be subject to community voting, fostering a sense of ownership. We ensure that Pepe’s Dragon remains a project shaped by its passionate supporters.</p>
+        </section>
 
-    <section id="fantasy-finance" class="green-background">
-        <h2>Fantasy Meets Finance</h2>
-        <p>In the heart of the Pacific Northwest, Mr. Meacham, a woodcarver, weaves tales of a mysterious dragon. His daughter Grace dismisses these as tall tales until she encounters Pepe, a 10-year-old orphan who claims to live in the woods with a giant, friendly dragon. Joined by the inquisitive Natalie, Grace embarks on an investigation to unveil the truth.</p>
-    </section>
+        <section id="strategic-marketing" class="green-background">
+            <h2 style="color: var(--dark);">Strategic Marketing</h2>
+            <p>Marketing is the cornerstone of Pepe’s Dragon's success. We allocate 4% of every buy and sell transaction towards sustained marketing initiatives. This transparent approach not only creates awareness at launch but ensures Pepe’s Dragon remains in the spotlight, demonstrating our dedication to long-term success.</p>
+        </section>
 
-    <section id="conclusion" class="green-background">
-        <h2>Conclusion</h2>
-        <p>Pepe’s Dragon transcends traditional cryptocurrencies; it's a movement fueled by community passion and unique utility. With meticulously crafted tokenomics, commitment to community governance, and strategic marketing, Pepe’s Dragon is poised for unparalleled success. Join us on this thrilling journey as we breathe life into Pepe’s Dragon on the BSC network.</p>
-    </section>
+        <section id="fantasy-finance" class="green-background">
+            <h2 style="color: var(--dark);">Fantasy Meets Finance</h2>
+            <p>In the heart of the Pacific Northwest, Mr. Meacham, a woodcarver, weaves tales of a mysterious dragon. His daughter Grace dismisses these as tall tales until she encounters Pepe, a 10-year-old orphan who claims to live in the woods with a giant, friendly dragon. Joined by the inquisitive Natalie, Grace embarks on an investigation to unveil the truth.</p>
+        </section>
+
+        <section id="conclusion" class="green-background">
+            <h2 style="color: var(--dark);">Conclusion</h2>
+            <p>Pepe’s Dragon transcends traditional cryptocurrencies; it's a movement fueled by community passion and unique utility. With meticulously crafted tokenomics, commitment to community governance, and strategic marketing, Pepe’s Dragon is poised for unparalleled success. Join us on this thrilling journey as we breathe life into Pepe’s Dragon on the BSC network.</p>
+        </section>
+
+    </div>
 
     <div class="cta-button">
-        <a href="#community" class="button">Join the Community</a>
-        <a href="https://t.me/pepesdragonofficial" target="_blank"><img src="images/telegram-logo.png" alt="Telegram Logo"></a>
-        <a href="https://twitter.com/_Pepedragon" target="_blank"><img src="images/twitter-logo.png" alt="Twitter Logo"></a>
+        <div class="container">
+            <a href="#community" class="button" style="color: var(--white);">Join the Community</a>
+            <a href="https://t.me/pepesdragonofficial" target="_blank"><img src="images/telegram-logo.png" alt="Telegram Logo"></a>
+            <a href="https://twitter.com/_Pepedragon" target="_blank"><img src="images/twitter-logo.png" alt="Twitter Logo"></a>
+        </div>
     </div>
 
     <footer class="footer">
-        <p>&copy; 2024 Pepe’s Dragon. All Rights Reserved.</p>
+        <div class="container">
+            <p style="color: var(--white);">&copy; 2024 Pepe’s Dragon. All Rights Reserved.</p>
+        </div>
     </footer>
 
     <script>
