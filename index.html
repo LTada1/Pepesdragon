@@ -9,6 +9,7 @@
 <body>
 
     <header style="background-image: url('images/header_background.jpg');">
+        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div> <!-- Hamburger menu icon -->
         <h1>Pepe’s Dragon: Unleashing Fantasy on BSC</h1>
     </header>
 
@@ -25,16 +26,12 @@
             <li><a href="#fantasy-finance">Fantasy Meets Finance</a></li>
             <li><a href="#conclusion">Conclusion</a></li>
         </ul>
-        <div class="external-links">
-            <a href="whitepaper.pdf" target="_blank">Download Whitepaper</a>
-            <a href="https://t.me/pepesdragonofficial" target="_blank">Telegram Group</a>
-        </div>
     </nav>
 
     <section id="abstract" class="green-background">
         <h2>Abstract</h2>
         <img src="images/1.jpg" alt="Image 1">
-        <p>Pepe’s Dragon is not merely a cryptocurrency; it embodies the fusion of the legendary Pepe culture and the enchanting charm of Pepe's Dragon on the Binance Smart Chain (BSC) network...</p>
+        <p>Pepe’s Dragon is not merely a cryptocurrency; it embodies the fusion of the legendary Pepe culture and the enchanting charm of Pepe's Dragon on the Binance Smart Chain (BSC) network. Beyond financial innovation, this project symbolizes a dynamic community, robust utility, and strategic marketing poised to elevate Pepe’s Dragon to unprecedented heights in the crypto space.</p>
     </section>
 
     <section id="introduction" class="green-background">
@@ -47,7 +44,7 @@
         <h2>Vision and Mission</h2>
         <img src="images/3.jpg" alt="Image 3">
         <h3>Vision:</h3>
-        <p>To propel Pepe’s Dragon into the forefront of the crypto landscape, exceeding the aspirations of other projects. We foresee a thriving community embracing the essence of Pepe and Pepe's Dragon, reaping the benefits of our token's utility and sustainability.</p>
+        <p>Our vision is to propel Pepe’s Dragon into the forefront of the crypto landscape, exceeding the aspirations of other projects. We foresee a thriving community embracing the essence of Pepe and Pepe's Dragon, reaping the benefits of our token's utility and sustainability.</p>
         <h3>Mission:</h3>
         <p>Our mission is to forge a robust ecosystem that not only rewards holders but also contributes meaningfully to the broader crypto community through innovative marketing initiatives.</p>
     </section>
@@ -97,11 +94,19 @@
 
     <div class="cta-button">
         <a href="#community" class="button">Join the Community</a>
+        <a href="https://t.me/pepesdragonofficial" target="_blank">Telegram Group</a> <!-- Move Telegram link here -->
     </div>
 
     <footer class="footer">
         <p>&copy; 2024 Pepe’s Dragon. All Rights Reserved.</p>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            const menuBar = document.querySelector('.menu-bar');
+            menuBar.classList.toggle('show-menu');
+        }
+    </script>
 
 </body>
 </html>
